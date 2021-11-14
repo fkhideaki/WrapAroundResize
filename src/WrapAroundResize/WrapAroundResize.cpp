@@ -82,7 +82,7 @@ Option parseOption(const string& s)
 string getFnOut(const string& fn, const Option& opt)
 {
 	string::size_type i = fn.find_last_of('.');
-	return fn.substr(0, i) + opt.getCmd() + ".png";
+	return fn.substr(0, i) + + "_" + opt.getCmd() + ".png";
 }
 
 int main(int argc, char* argv[])
